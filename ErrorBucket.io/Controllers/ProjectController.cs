@@ -28,7 +28,7 @@ namespace ErrorBucket.Controllers
         [HttpPost]
         public ActionResult New(string projectName)
         {
-            var client = new CouchClient("dannylane.iriscouch.com", 6984, "dannylane", "adminpass", false, AuthenticationType.Cookie);
+            var client = new CouchClient("dannylane.iriscouch.com", 6984, "dannylane", "adminpass", true, AuthenticationType.Cookie);
             var userresult = client.CreateUser(projectName, projectName);
             //var newUid = userresult.Value<string>("id");
             
