@@ -12,8 +12,7 @@ namespace ErrorBucket.io
                         "~/Scripts/jquery-{version}.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/exception").Include(
-                        "~/Scripts/custom/error.handler.js",
-                        "~/Scripts/custom/exception.js"
+                        "~/Scripts/custom/error.handler.js"
                         ));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(

@@ -20,7 +20,7 @@ namespace ErrorBucket.io.Controllers
         }
         public ActionResult Index(string errorMessage)
         {
-            var client = new CouchClient("dannylane.iriscouch.com", 6984, "dannylane", "adminpass", false, AuthenticationType.Cookie);
+            var client = new CouchClient("dannylane.iriscouch.com", 6984, "dannylane", "adminpass", true, AuthenticationType.Cookie);
             var udb = client.GetDatabase("testing");
 
             JObject jObject = new JObject();
@@ -48,7 +48,7 @@ namespace ErrorBucket.io.Controllers
 
         public LoveSeat.ViewResult List()
         {
-            var client = new CouchClient("dannylane.iriscouch.com", 6984, "dannylane", "adminpass", false, AuthenticationType.Cookie);
+            var client = new CouchClient("dannylane.iriscouch.com", 6984, "dannylane", "adminpass", true, AuthenticationType.Cookie);
             var udb = client.GetDatabase("testing");
             return udb.GetAllDocuments();
            // return new JsonResult {Data = db, JsonRequestBehavior = JsonRequestBehavior.AllowGet};
