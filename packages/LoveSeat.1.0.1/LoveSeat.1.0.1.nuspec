@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>LoveSeat</id>
+    <version>1.0.1</version>
+    <title>LoveSeat</title>
+    <authors>Martin Murphy (soitgoes)</authors>
+    <owners>Martin Murphy (soitgoes)</owners>
+    <licenseUrl>http://opensource.org/licenses/mit-license.php</licenseUrl>
+    <projectUrl>https://github.com/soitgoes/LoveSeat</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Love Seat is a simply architected CouchDB C# client with the intent to abstract away just enough so that it's easy to use, but not enough so that you don't know what's going on.</description>
+    <summary>LoveSeat, Bringing CouchDB and .NET little closer.</summary>
+    <copyright>Copyright (c) 2012 Martin Murphy.</copyright>
+    <tags>couchdb</tags>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="4.0.6" />
+    </dependencies>
+    <references>
+      <reference file="LoveSeat.dll" />
+      <reference file="LoveSeat.Interfaces.dll" />
+    </references>
+  </metadata>
+</package>
