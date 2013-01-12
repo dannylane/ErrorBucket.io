@@ -4,7 +4,7 @@ var count = 0;
 var src = 'http://dannytesting3.azurewebsites.net/log?error=';
 
 window.onerror = function (errorMsg, url, lineNumber) {
-    var messageToLog = errorMsg + '&url=' + url + '&lineNumber=' + lineNumber + '&localTime' + (new Date()).toString();
+    var messageToLog = errorMsg + '&url=' + url + '&lineNumber=' + lineNumber + '&localTime' + Date.now();
     cachedErrrors.push(messageToLog);
 
     var bodyEle = document.getElementsByTagName('body')[0];
