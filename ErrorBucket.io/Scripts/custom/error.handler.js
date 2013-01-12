@@ -1,8 +1,8 @@
 ﻿var currentHandler = window.onerror;
 var cachedErrrors = [];
 var count = 0;
-var src = 'http://localhost/ErrorBucket/log?error=';
-__
+var src = 'http://dannytesting3.azurewebsites.net/log?error=';
+
 window.onerror = function (errorMsg, url, lineNumber) {
     var messageToLog = errorMsg + '&url=' + url + '&lineNumber=' + lineNumber;
     cachedErrrors.push(messageToLog);
