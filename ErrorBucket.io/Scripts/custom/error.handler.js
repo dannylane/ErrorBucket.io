@@ -11,7 +11,6 @@ window.onerror = function (errorMsg, url, lineNumber) {
     var bodyEle = document.getElementsByTagName('body')[0];
     if (bodyEle) {
         while (cachedErrrors.length > 0) {
-            alert('yep: ' + errorMsg);
             var imgElement = document.createElement('img');
             imgElement.setAttribute('id', 'error-bucket-image-' + count);
             imgElement.setAttribute('src', src + cachedErrrors.pop());
